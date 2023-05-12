@@ -1,0 +1,69 @@
+Description	SMARTS	REACTIVITY	H_RELEVANT
+Allenic Carbon	[$([CX2](=C)=C)]	1	0
+Vinylic Carbon	[$([CX3]=[CX3])]	1	0
+alkyne	[$([CX2]#C)]	1	0
+acyl halide	"[CX3](=[OX1])[F,Cl,Br,I]"	1	0
+aldehyde	[CX3H1](=O)[#6]	1	1
+anhydride	[CX3](=[OX1])[OX2][CX3](=[OX1])	1	1
+Amide	[NX3][CX3](=[OX1])[#6]	1	1
+Amidinium	[NX3][CX3]=[NX3+]	1	1
+Carbamate	"[NX3,NX4+][CX3](=[OX1])[OX2,OX1-]"	1	1
+Carbamic ester	[NX3][CX3](=[OX1])[OX2H0]	1	1
+Carbamic acid	[CX3](=O)[O-]	1	1
+Carbonic Acid or Carbonic Ester	[CX3](=[OX1])(O)O	1	1
+Carbonic Acid or Carbonic Acid-Ester	"[CX3](=[OX1])([OX2])[OX2H,OX1H0-1]"	1	1
+Carboxylic acid or conjugate base	"[CX3](=O)[OX1H0-,OX2H1]"	1	1
+Cyanamide	[NX3][CX2]#[NX1]	1	1
+Ester	[#6][CX3](=O)[OX2H0][#6]	1	1
+ketone	[#6][CX3](=O)[#6]	1	1
+Ether	[OD2]([#6])[#6]	1	1
+Primary or secondary amine	"[NX3;H2,H1;!$(NC=O)]"	1	1
+Enamine	[NX3][CX3]=[CX3]	1	1
+Primary amine	[NX3;H2;!$(NC=[!#6]);!$(NC#[!#6])][#6]	1	1
+Primary amine2	[N;H2;X3][$Csp3]	1	1
+Secondary amine	[N;H;X3]([$Csp3])[$Csp3]	1	1
+Two primary or secondary amines	"[NX3;H2,H1;!$(NC=O)].[NX3;H2,H1;!$(NC=O)]"	1	1
+Enamine or Aniline Nitrogen	"[NX3][$(C=C),$(cc)]"	1	1
+Azide group	"[$(*-[NX2-]-[NX2+]#[NX1]),$(*-[NX2]=[NX2+]=[NX1-])]"	1	0
+Azoxy Nitrogen	[NX2]=[NX2]	1	1
+Diazo Nitrogen	"[$([#6]=[N+]=[N-]),$([#6-]-[N+]#[N])]"	1	0
+Azole	"[$([nr5]:[nr5,or5,sr5]),$([nr5]:[cr5]:[nr5,or5,sr5])]"	1	1
+hydrazone	[NX3][NX2]=[*]	1	1
+Substituted imine	"[CX3;$([C]([#6])[#6]),$([CH][#6])]=[NX2][#6]"	1	1
+Substituted or un-substituted imine	"[$([CX3]([#6])[#6]),$([CX3H][#6])]=[$([NX2][#6]),$([NX2H])]"	1	1
+Iminium	[NX3+]=[CX3]	1	1
+Unsubstituted dicarboximide	[CX3](=[OX1])[NX3H][CX3](=[OX1])	1	1
+Substituted dicarboximide	[CX3](=[OX1])[NX3H0]([#6])[CX3](=[OX1])	1	1
+Dicarboxdiimide	[CX3](=[OX1])[NX3H0]([NX3H0]([CX3](=[OX1]))[CX3](=[OX1]))[CX3](=[OX1])	1	1
+Nitrate	"[$([NX3](=[OX1])(=[OX1])O),$([NX3+]([OX1-])(=[OX1])O)]"	1	1
+Nitrile	[NX1]#[CX2]	1	0
+Isonitrile	[CX1-]#[NX2+]	1	0
+Nitro group	"[$([NX3](=O)=O),$([NX3+](=O)[O-])][!#8]"	1	1
+Two Nitro groups	"[$([NX3](=O)=O),$([NX3+](=O)[O-])][!#8].[$([NX3](=O)=O),$([NX3+](=O)[O-])][!#8]"	1	1
+Nitroso-group	[NX2]=[OX1]	1	1
+N-Oxide	"[$([#7+][OX1-]),$([#7v5]=[OX1]);!$([#7](~[O])~[O]);!$([#7]=[#7])]"	1	1
+Primary alcohol	[CH2][OH1]	1	1
+Secondary alcohol	[CH1][OH1]	1	1
+Hydroxyl in Carboxylic Acid	[OX2H][CX3]=[OX1]	1	1
+Enol or Phenol	"[OX2H][$(C=C),$(cc)]"	1	1
+Phosphoric_acid groups	"[$(P(=[OX1])([$([OX2H]),$([OX1-]),$([OX2]P)])([$([OX2H]),$([OX1-]),$([OX2]P)])[$([OX2H]),$([OX1-]),$([OX2]P)]),$([P+]([OX1-])([$([OX2H]),$([OX1-]),$([OX2]P)])([$([OX2H]),$([OX1-]),$([OX2]P)])[$([OX2H]),$([OX1-]),$([OX2]P)])]"		
+Phosphoric_ester groups	"[$(P(=[OX1])([OX2][#6])([$([OX2H]),$([OX1-]),$([OX2][#6])])[$([OX2H]),$([OX1-]),$([OX2][#6]),$([OX2]P)]),$([P+]([OX1-])([OX2][#6])([$([OX2H]),$([OX1-]),$([OX2][#6])])[$([OX2H]),$([OX1-]),$([OX2][#6]),$([OX2]P)])]"	1	1
+Carbo-Thiocarboxylate	[S-][CX3](=S)[#6]	1	0
+Carbo-Thioester	S([#6])[CX3](=O)[#6]	1	1
+Thio analog of carbonyl	[#6X3](=[SX1])([!N])[!N]	1	1
+Thiol	[#16X2H]	1	1
+Thioamide	[NX3][CX3]=[SX1]	1	1
+Sulfide	[#16X2H0]	1	0
+Sulfinate	"[$([#16X3](=[OX1])[OX2H0]),$([#16X3+]([OX1-])[OX2H0])]"	1	1
+Sulfone	"[$([#16X4](=[OX1])(=[OX1])([#6])[#6]),$([#16X4+2]([OX1-])([OX1-])([#6])[#6])]"	1	1
+Sulfonamide	"[$([SX4](=[OX1])(=[OX1])([!O])[NX3]),$([SX4+2]([OX1-])([OX1-])([!O])[NX3])] 1 1"	1	1
+Sulfoxide	"[$([#16X3](=[OX1])([#6])[#6]),$([#16X3+]([OX1-])([#6])[#6])]"	1	1
+Sulfate	"[$([#16X4](=[OX1])(=[OX1])([OX2H,OX1H0-])[OX2][#6]),$([#16X4+2]([OX1-])([OX1-])([OX2H,OX1H0-])[OX2][#6])]"	1	1
+Sulfamate	"[$([#16X4]([NX3])(=[OX1])(=[OX1])[OX2][#6]),$([#16X4+2]([NX3])([OX1-])([OX1-])[OX2][#6])]"	1	1
+Any carbon attached to any halogen	"[#6][F,Cl,Br,I]"	1	0
+Unbranched_alkane groups	[R0;D2][R0;D2][R0;D2][R0;D2]	0	0
+Unbranched_chain groups	[R0;D2]~[R0;D2]~[R0;D2]~[R0;D2]	0	0
+Long_chain groups	[AR0]~[AR0]~[AR0]~[AR0]~[AR0]~[AR0]~[AR0]~[AR0]	0	0
+Aromatic amine	"[c][NX3;H2,H1;!$(NC=O)]"	1	1
+Aromatic heterocycle	[nH]	0	1
+Benzene	c1ccccc1	0	0
